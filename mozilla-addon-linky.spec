@@ -4,7 +4,7 @@ Summary(pl):	£atwy dostêp do otwierania odno¶ników i obrazów na stronach WWW
 Name:		mozilla-addon-%{_realname}
 Version:	2.1.0
 %define _foover	%(echo %{version} | tr -d .)
-Release:	1
+Release:	2
 License:	?
 Group:		X11/Applications/Networking
 Source0:	http://downloads.mozdev.org/%{_realname}/%{_realname}-%{_foover}.xpi
@@ -17,7 +17,7 @@ Requires:	mozilla >= 1.0-7
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{_realname}-%{version}-root-%(id -u -n)
 
-%define         _chromedir      %{_libdir}/mozilla/chrome
+%define         _chromedir      %{_datadir}/mozilla/chrome
 
 %description
 Linky is a very simple addon to the context menu that provide you with
