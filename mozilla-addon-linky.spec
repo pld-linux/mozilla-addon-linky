@@ -2,13 +2,13 @@
 Summary:	Easy access to open links and pictures on webpages
 Summary(pl):	£atwy dostêp do otwierania odno¶ników i obrazów na stronach WWW
 Name:		mozilla-addon-%{_realname}
-Version:	2.0.0
+Version:	2.1.0
 %define _foover	%(echo %{version} | tr -d .)
 Release:	1
 License:	?
 Group:		X11/Applications/Networking
 Source0:	http://downloads.mozdev.org/%{_realname}/%{_realname}-%{_foover}.xpi
-# Source0-md5:	118e0d7379592ddc90c322df641a40ca
+# Source0-md5:	45b2325c2faa94de4fbc7ed66e3a5dc7
 Source1:	%{_realname}-installed-chrome.txt
 URL:		http://%{_realname}.mozdev.org/
 BuildRequires:	unzip
