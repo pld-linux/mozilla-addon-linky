@@ -20,22 +20,43 @@ BuildRoot:	%{tmpdir}/%{_realname}-%{version}-root-%(id -u -n)
 %define         _chromedir      %{_libdir}/mozilla/chrome
 
 %description
-Linky is a very simple addon to the context menu that provide you with the
-following:
+Linky is a very simple addon to the context menu that provide you with
+the following:
 
 * Opens all links in a selection in new tabs or windows
 * Finds and opens link in plain text in a new tab or window
 * Opens all links on page in new tabs or windows
 * Open all links that appears to be linking to an image in new tabs
   or windows
-* Shows all links that appears to be linking to an image in one new tab
-  or window
+* Shows all links that appears to be linking to an image in one new
+  tab or window
 * Open all links that appears to be linking to an image in one new tab
   or window
 * Download all links on page
 * Validate all links on page
 * Select links Dialog
 * Preferences panel
+
+%description -l pl
+Linky to bardzo prosty dodatek do menu kontekstowego dostarczaj±cy
+nastêpuj±c± funkcjonalno¶æ:
+
+- otwieranie wszystkich wybranych odno¶ników w nowych panelach lub
+  okienkach
+- znajdowanie i otwieranie odno¶ników z dokumentów czysto tekstowych
+  w nowym panelu lub okienku
+- otwieranie wszystkich odno¶ników ze strony w nowych panelach lub
+  okienkach
+- otwieranie wszystkich odno¶ników wygl±daj±ce na odno¶niki do
+  obrazków w nowych panelach lub okienkach
+- pokazywanie wszystkich odno¶ników wygl±daj±cych na odno¶niki do
+  obrazków w jednym nowym panelu lub okienku
+- otwieranie wszystkich odno¶ników wygl±daj±cych na odno¶niki do
+  obrazków w jednym nowym panelu lub okienku
+- ¶ci±ganie wszystkich odno¶ników ze strony
+- sprawdzanie wszystkich odno¶ników ze strony
+- okno dialogowe wyboru odno¶ników
+- panel ustawieñ
 
 %prep
 
