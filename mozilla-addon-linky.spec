@@ -7,7 +7,7 @@ Version:	2.1.0
 Release:	3
 License:	?
 Group:		X11/Applications/Networking
-Source0:	http://downloads.mozdev.org/%{_realname}/%{_realname}-%{_foover}.xpi
+Source0:	http://downloads.mozdev.org/linky/%{_realname}-%{_foover}.xpi
 # Source0-md5:	45b2325c2faa94de4fbc7ed66e3a5dc7
 Source1:	%{_realname}-installed-chrome.txt
 URL:		http://%{_realname}.mozdev.org/
@@ -16,7 +16,7 @@ Requires(post,postun):	mozilla >= 1.7.3-3
 Requires(post,postun):	textutils
 Requires:	mozilla >= 1.0-7
 BuildArch:	noarch
-BuildRoot:	%{tmpdir}/%{_realname}-%{version}-root-%(id -u -n)
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_chromedir	%{_datadir}/mozilla/chrome
 
