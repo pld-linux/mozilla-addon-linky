@@ -1,0 +1,4 @@
+skin,install,url,jar:resource:/chrome/linky.jar!/content/linky/
+locale,install,url,jar:resource:/chrome/linky.jar!/content/linky/
+content,install,url,jar:resource:/chrome/linky.jar!/content/linky/
+locale,install,url,jar:resource:/chrome/linky.jar!/locale/en-US/linky/
