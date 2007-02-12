@@ -1,6 +1,6 @@
 %define		_realname	linky
 Summary:	Easy access to open links and pictures on webpages
-Summary(pl):	£atwy dostêp do otwierania odno¶ników i obrazów na stronach WWW
+Summary(pl.UTF-8):   Åatwy dostÄ™p do otwierania odnoÅ›nikÃ³w i obrazÃ³w na stronach WWW
 Name:		mozilla-addon-%{_realname}
 Version:	2.1.0
 %define	_foover	%(echo %{version} | tr -d .)
@@ -38,26 +38,26 @@ the following:
 * Select links Dialog
 * Preferences panel
 
-%description -l pl
-Linky to bardzo prosty dodatek do menu kontekstowego dostarczaj±cy
-nastêpuj±c± funkcjonalno¶æ:
+%description -l pl.UTF-8
+Linky to bardzo prosty dodatek do menu kontekstowego dostarczajÄ…cy
+nastÄ™pujÄ…cÄ… funkcjonalnoÅ›Ä‡:
 
-- otwieranie wszystkich wybranych odno¶ników w nowych panelach lub
+- otwieranie wszystkich wybranych odnoÅ›nikÃ³w w nowych panelach lub
   okienkach
-- znajdowanie i otwieranie odno¶ników z dokumentów czysto tekstowych
+- znajdowanie i otwieranie odnoÅ›nikÃ³w z dokumentÃ³w czysto tekstowych
   w nowym panelu lub okienku
-- otwieranie wszystkich odno¶ników ze strony w nowych panelach lub
+- otwieranie wszystkich odnoÅ›nikÃ³w ze strony w nowych panelach lub
   okienkach
-- otwieranie wszystkich odno¶ników wygl±daj±ce na odno¶niki do
-  obrazków w nowych panelach lub okienkach
-- pokazywanie wszystkich odno¶ników wygl±daj±cych na odno¶niki do
-  obrazków w jednym nowym panelu lub okienku
-- otwieranie wszystkich odno¶ników wygl±daj±cych na odno¶niki do
-  obrazków w jednym nowym panelu lub okienku
-- ¶ci±ganie wszystkich odno¶ników ze strony
-- sprawdzanie wszystkich odno¶ników ze strony
-- okno dialogowe wyboru odno¶ników
-- panel ustawieñ
+- otwieranie wszystkich odnoÅ›nikÃ³w wyglÄ…dajÄ…ce na odnoÅ›niki do
+  obrazkÃ³w w nowych panelach lub okienkach
+- pokazywanie wszystkich odnoÅ›nikÃ³w wyglÄ…dajÄ…cych na odnoÅ›niki do
+  obrazkÃ³w w jednym nowym panelu lub okienku
+- otwieranie wszystkich odnoÅ›nikÃ³w wyglÄ…dajÄ…cych na odnoÅ›niki do
+  obrazkÃ³w w jednym nowym panelu lub okienku
+- Å›ciÄ…ganie wszystkich odnoÅ›nikÃ³w ze strony
+- sprawdzanie wszystkich odnoÅ›nikÃ³w ze strony
+- okno dialogowe wyboru odnoÅ›nikÃ³w
+- panel ustawieÅ„
 
 %prep
 
