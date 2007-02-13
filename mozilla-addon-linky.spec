@@ -1,6 +1,6 @@
 %define		_realname	linky
 Summary:	Easy access to open links and pictures on webpages
-Summary(pl.UTF-8):   Łatwy dostęp do otwierania odnośników i obrazów na stronach WWW
+Summary(pl.UTF-8):	Łatwy dostęp do otwierania odnośników i obrazów na stronach WWW
 Name:		mozilla-addon-%{_realname}
 Version:	2.1.0
 %define	_foover	%(echo %{version} | tr -d .)
