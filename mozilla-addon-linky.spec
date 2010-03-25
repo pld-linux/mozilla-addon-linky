@@ -1,9 +1,9 @@
 %define		_realname	linky
+%define	_foover	%(echo %{version} | tr -d .)
 Summary:	Easy access to open links and pictures on webpages
 Summary(pl.UTF-8):	Łatwy dostęp do otwierania odnośników i obrazów na stronach WWW
 Name:		mozilla-addon-%{_realname}
 Version:	2.1.0
-%define	_foover	%(echo %{version} | tr -d .)
 Release:	3
 License:	?
 Group:		X11/Applications/Networking
@@ -24,19 +24,19 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Linky is a very simple addon to the context menu that provide you with
 the following:
 
-* Opens all links in a selection in new tabs or windows
-* Finds and opens link in plain text in a new tab or window
-* Opens all links on page in new tabs or windows
-* Open all links that appears to be linking to an image in new tabs
-  or windows
-* Shows all links that appears to be linking to an image in one new
+- Opens all links in a selection in new tabs or windows
+- Finds and opens link in plain text in a new tab or window
+- Opens all links on page in new tabs or windows
+- Open all links that appears to be linking to an image in new tabs or
+  windows
+- Shows all links that appears to be linking to an image in one new
   tab or window
-* Open all links that appears to be linking to an image in one new tab
+- Open all links that appears to be linking to an image in one new tab
   or window
-* Download all links on page
-* Validate all links on page
-* Select links Dialog
-* Preferences panel
+- Download all links on page
+- Validate all links on page
+- Select links Dialog
+- Preferences panel
 
 %description -l pl.UTF-8
 Linky to bardzo prosty dodatek do menu kontekstowego dostarczający
@@ -44,8 +44,8 @@ następującą funkcjonalność:
 
 - otwieranie wszystkich wybranych odnośników w nowych panelach lub
   okienkach
-- znajdowanie i otwieranie odnośników z dokumentów czysto tekstowych
-  w nowym panelu lub okienku
+- znajdowanie i otwieranie odnośników z dokumentów czysto tekstowych w
+  nowym panelu lub okienku
 - otwieranie wszystkich odnośników ze strony w nowych panelach lub
   okienkach
 - otwieranie wszystkich odnośników wyglądające na odnośniki do
@@ -72,10 +72,12 @@ install %{SOURCE1} $RPM_BUILD_ROOT%{_chromedir}
 rm -rf $RPM_BUILD_ROOT
 
 %post
-%{_sbindir}/mozilla-chrome+xpcom-generate
+if [ "$1" = 1 ]; then
+	%{_sbindir}/mozilla-chrome+xpcom-generate
+fi
 
 %postun
-%{_sbindir}/mozilla-chrome+xpcom-generate
+[ ! -x %{_sbindir}/mozilla-chrome+xpcom-generate ] || %{_sbindir}/mozilla-chrome+xpcom-generate
 
 %files
 %defattr(644,root,root,755)
