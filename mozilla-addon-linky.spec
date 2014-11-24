@@ -10,7 +10,7 @@ Group:		X11/Applications/Networking
 Source0:	http://downloads.mozdev.org/linky/%{_realname}-%{_foover}.xpi
 # Source0-md5:	45b2325c2faa94de4fbc7ed66e3a5dc7
 Source1:	%{_realname}-installed-chrome.txt
-URL:		http://%{_realname}.mozdev.org/
+URL:		http://linky.mozdev.org/
 BuildRequires:	unzip
 Requires(post,postun):	mozilla >= 5:1.7.3-3
 Requires(post,postun):	textutils
@@ -66,7 +66,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_chromedir}
 
 unzip %{SOURCE0} -d $RPM_BUILD_ROOT%{_chromedir}
-install %{SOURCE1} $RPM_BUILD_ROOT%{_chromedir}
+cp -p %{SOURCE1} $RPM_BUILD_ROOT%{_chromedir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
